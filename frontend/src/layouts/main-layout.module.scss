@@ -1,0 +1,19 @@
+.layout{
+  background-color: var(--color-base-dark);
+  grid-template-areas:
+          '. main .'
+  'footer footer footer';
+  padding-top: var(--nav-height);
+}
+
+.header{
+  grid-area: header;
+}
+
+.main{
+  grid-area: main;
+}
+
+.footer{
+  grid-area: footer;
+}

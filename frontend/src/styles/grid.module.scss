@@ -1,0 +1,9 @@
+.grid{
+  display: grid;
+  grid-template-columns: minmax(var(--margin-col-width), 1fr) minmax(0, var(--main-col-width)) minmax(var(--margin-col-width), 1fr);
+}
+
+.grid-wide{
+  display: grid;
+  grid-template-columns: minmax(var(--margin-col-width), 1fr) minmax(0, var(--wide-col-width)) minmax(var(--margin-col-width), 1fr);
+}

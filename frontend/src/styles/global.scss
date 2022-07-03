@@ -1,0 +1,18 @@
+html {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-root);
+  color: var(--color-base-light);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+button{
+  background-color: unset;
+  border: unset;
+}

@@ -1,0 +1,29 @@
+.container{
+  height: 100px;
+  background-color: var(--color-base-dark);
+
+  color: var(--color-base-light);
+  font-family: roboto;
+  font-weight: 400;
+  grid-template-areas: '. bar .';
+  font-size: var(--fs-s);
+}
+
+.inner-container{
+  grid-area: bar;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  max-width: 100px;
+}
+
+.privacy{
+
+}
+
+.copyright{
+
+}

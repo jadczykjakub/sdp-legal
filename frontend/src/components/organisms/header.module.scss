@@ -1,0 +1,26 @@
+.header{
+  height: var(--nav-height);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  grid-template-areas: '. header .';
+  background-color: var(--color-base-dark);
+  transition: .2s ease-in-out;
+  border-bottom: 2px solid var(--color-gray);
+}
+
+.inner-container{
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  max-width: 200px;
+}
+
+.scrolled{
+  height: var(--nav-height-scrolled);
+}

@@ -1,0 +1,27 @@
+.title{
+  text-align: center;
+}
+
+.medium{
+  font-size: var(--fs-xl);
+}
+
+.large{
+  font-size: var(--fs-xxl);
+}
+
+.underscore{
+  position: relative;
+
+  &:after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background: #020024;
+    background: linear-gradient(90deg, #020024 0%, #363636 25%, #363636 75%, black 100%);
+    bottom: -0.2em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

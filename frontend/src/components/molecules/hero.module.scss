@@ -1,0 +1,92 @@
+.container{
+  display: flex;
+  gap: 1em;
+  padding-top: 4em;
+  position: relative;
+
+  &:after{
+    content: '';
+    position: absolute;
+    width: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    bottom: 0;
+    background: linear-gradient(90deg, #020024 0%, #db842d 25%, #db842d 75%, black 100%);
+    z-index: 2;
+  }
+
+  @include media('<tablet'){
+    min-height: 360px;
+    text-align: center;
+  }
+}
+
+.text-container{
+  max-width: 40%;
+  z-index: 2;
+
+  @include media('<tablet'){
+    max-width: 100%;
+  }
+}
+
+.title{
+  font-size: var(--fs-xxl);
+}
+
+.subtitle{
+  font-size: var(--fs-xl);
+  margin-top: .5em;
+  font-weight: var(--fw-thin);
+}
+
+.text{
+  font-size: var(--fs-l);
+  margin-top: 3em;
+  font-weight: var(--fw-thin);
+
+  @include media('<tablet'){
+    margin-top: 12em;
+  }
+
+  @include media('<phone'){
+    margin-top: 9em;
+  }
+}
+
+.button{
+  margin: 3em 0;
+
+  @include media('<tablet'){
+    margin: 1em auto 1em;
+  }
+}
+
+.image{
+  z-index: 1;
+
+  @include media('<laptop'){
+    position: absolute;
+    right: -4em;
+    bottom: 1px;
+    max-width: 600px;
+  }
+
+  @include media('<iPad'){
+    max-width: 500px;
+  }
+
+  @include media('<tablet'){
+    opacity: .6;
+    max-width: 400px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 100%;
+  }
+
+  @include media('<phone'){
+    bottom: 3em;
+    max-width: 350px;
+  }
+}

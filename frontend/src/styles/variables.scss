@@ -1,0 +1,43 @@
+:root {
+  --nav-height: 100px;
+  --nav-height-scrolled: 80px;
+
+  --margin-col-width: 50px;
+  --main-col-width: 1250px;
+  --wide-col-width: 1350px;
+
+  @include media('<tablet'){
+    --margin-col-width: 20px;
+  }
+
+  // colors
+  --color-base-dark: #000;
+  --color-base-light: #fff;
+  --color-gray: #353535;
+
+  --color-primary: #db842d;
+
+  --ff-primary: Roboto, sans-serif;
+
+  --fw-thin: 100;
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  //font sizes:
+
+  --fs-root: 62.5%;
+  --fs-xxl: 4rem;
+  --fs-xl: 3rem;
+  --fs-l: 2rem;
+  --fs-m: 1.8rem;
+  --fs-s: 1.6rem;
+  --fs-xs: 1.2rem;
+
+
+  @include media('<iPad'){
+    --fs-xxl: 3rem;
+    --fs-xl: 2rem;
+    --fs-l: 1.6rem;
+
+  }
+}

@@ -1,0 +1,11 @@
+@import "~include-media/dist/include-media";
+
+// Make sure breakpoints are consistent with breakpoints.ts file!
+$breakpoints: (
+    phone: 550px,
+    tablet: 832px,
+    iPad: 1025px,
+    laptop: 1200px,
+    desktop: 1392px,
+    bigDesktop: 1500px
+);
